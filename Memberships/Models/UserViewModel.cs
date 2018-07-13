@@ -17,7 +17,6 @@ namespace Memberships.Models
         public string Email { get; set; }
 
         [Display(Name = "First Name")]
-        [StringLength(30, ErrorMessage = "The {0) nmust be at least {1} characters long", MinimumLength = 2)]
         public string FirstName { get; set; }
 
         [Required]

@@ -255,8 +255,10 @@
     <Content Include="Content\Images\laptop.jpg" />
     <Content Include="Content\Images\unit-testing.png" />
     <Content Include="Content\Images\video.png" />
+    <Content Include="Content\Logos\infinity-icon.PNG" />
     <Content Include="Content\Logos\membership-icon-30x152.png" />
     <Content Include="Content\Logos\membership-icon-45x184.png" />
+    <Content Include="Content\navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

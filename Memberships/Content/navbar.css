@@ -1,0 +1,32 @@
+﻿.navbar {
+    border-bottom: 2px solid cyan;
+    background-color: black;
+  
+}
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+
+}
+
+
+.nav a {
+    color: white;
+}
+
+    .nav a:hover {
+        color: cyan;
+    }
+
+.nav > li > a:hover {
+    background-color: transparent;
+}
+
+.navbar-nav > li > a {
+    margin-top: 15px;
+    padding-top: 1px;
+    max-height: 25px;
+}
+
+.body-content {
+    margin-top: 40px;
+}

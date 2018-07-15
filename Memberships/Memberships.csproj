@@ -208,7 +208,18 @@
     <Compile Include="Areas\Admin\Controllers\SubscriptionController.cs" />
     <Compile Include="Areas\Admin\Controllers\SubscriptionProductController.cs" />
     <Compile Include="Areas\Admin\Extensions\ConversionExtensions.cs" />
+    <Compile Include="Comparers\ProductSectionEqualityComparer.cs" />
+    <Compile Include="Comparers\ThumbnailEqualityComparer.cs" />
+    <Compile Include="Controllers\ProductContentController.cs" />
+    <Compile Include="Extensions\HttpContextExtensions.cs" />
+    <Compile Include="Extensions\SectionExtensions.cs" />
+    <Compile Include="Extensions\ThumbnailExtensions.cs" />
+    <Compile Include="Models\ProductItemRow.cs" />
+    <Compile Include="Models\ProductSection.cs" />
+    <Compile Include="Models\ProductSectionModel.cs" />
     <Compile Include="Models\RegisterUserModel.cs" />
+    <Compile Include="Models\ThumbnailAreaModel.cs" />
+    <Compile Include="Models\ThumbnailModel.cs" />
     <Compile Include="Models\UserSubscriptionModel.cs" />
     <Compile Include="Extensions\IdentityExtensions.cs" />
     <Compile Include="Areas\Admin\Models\EditButtonModel.cs" />
@@ -250,15 +261,20 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carret.css" />
     <Content Include="Content\Images\csharp-for-beginners.png" />
     <Content Include="Content\Images\csharp-zip.png" />
     <Content Include="Content\Images\laptop.jpg" />
+    <Content Include="Content\Images\node.jpg" />
+    <Content Include="Content\Images\php.jpg" />
     <Content Include="Content\Images\unit-testing.png" />
     <Content Include="Content\Images\video.png" />
     <Content Include="Content\Logos\infinity-icon.PNG" />
     <Content Include="Content\Logos\membership-icon-30x152.png" />
     <Content Include="Content\Logos\membership-icon-45x184.png" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\ProductContent.css" />
+    <Content Include="Content\thumbnails.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -278,6 +294,7 @@
     <Content Include="Areas\Admin\Views\Section\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Section\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Section\Index.cshtml" />
+    <Content Include="Scripts\carret.js" />
     <Content Include="Views\Shared\_BackToListButtonPartial.cshtml" />
     <Content Include="Views\Shared\_EditToListButtonPartial.cshtml" />
     <Content Include="Views\Shared\_SmallButtonPartial.cshtml" />
@@ -381,6 +398,10 @@
     <Content Include="Views\Account\Edit.cshtml" />
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Account\Subscriptions.cshtml" />
+    <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
+    <Content Include="Views\ProductContent\Index.cshtml" />
+    <Content Include="Views\ProductContent\_ProductSectionPartial.cshtml" />
+    <Content Include="Views\ProductContent\_ProductItemRowPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

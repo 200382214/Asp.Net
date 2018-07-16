@@ -83,10 +83,27 @@ namespace Memberships.Extensions
                                    IsAvailable = DbFunctions.CreateDateTime(today.Year,
                                    today.Month, today.Day, 0, 0, 0) >= DbFunctions.CreateDateTime(us.StartDate.Value.Year,
                                    us.StartDate.Value.Month, us.StartDate.Value.Day + i.WaitDays, 0, 0, 0),
-                                   IsDownload = it.Title.Equals("Download")
+                                   IsDownload = it.Title.Equals("Downloads")
                                }).ToListAsync();
 
             return items;
+        }
+        public static async Task<ContentViewModel> GetContentAsync(
+            int procuctId, int itemId)
+        {
+            var db = ApplicationDbContext.Create();
+            return await (
+                from i in db.Items
+                join it in db.ItemTypes on i.ItemTypeId equals it.Id
+                where i.Id.Equals(itemId)
+                select new ContentViewModel
+                {
+                    ProductId = procuctId,
+                    HTML = i.HTML,
+                    VideoURL = i.Url,
+                    Title = i.Title,
+                    Description = i.Description
+                }).FirstOrDefaultAsync();
         }
     }
 }

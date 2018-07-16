@@ -18,14 +18,24 @@
         //Left
         <div class="col-lg-9 col-md-8 col-sm-7">
             <h2>
-                You are not logged in.
+              Please Register or Log in
             </h2>
         </div>
         //Right
         <div class="col-lg-3 col-md-4 col-sm-5">
+            @Html.Partial("_RegisterUserPartial", new RegisterUserModel { Email = "", Name = "", Password = "" })
 
         </div>
 
 
     }
 </div>
+<div class="row">
+    <div class="col-sm-3 register-code-area">
+        @Html.Partial("_RegisterCodePartial")
+    </div>
+    <div class="col-sm-9">
+
+        </div>
+    </div>
+    

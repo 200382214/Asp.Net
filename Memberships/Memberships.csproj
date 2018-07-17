@@ -210,10 +210,13 @@
     <Compile Include="Areas\Admin\Extensions\ConversionExtensions.cs" />
     <Compile Include="Comparers\ProductSectionEqualityComparer.cs" />
     <Compile Include="Comparers\ThumbnailEqualityComparer.cs" />
+    <Content Include="Content\forgot-password.css" />
     <Content Include="Content\Login.css" />
+    <Content Include="Content\Logos\infinity-icon-visible.png" />
     <Content Include="Content\RegisterUser.css" />
     <Compile Include="Controllers\ProductContentController.cs" />
     <Compile Include="Controllers\RegisterCodeController.cs" />
+    <Compile Include="Extensions\EmailExtensions.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="Extensions\SectionExtensions.cs" />
@@ -302,6 +305,7 @@
     <Content Include="Areas\Admin\Views\Section\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Section\Index.cshtml" />
     <Content Include="Scripts\carret.js" />
+    <Content Include="Scripts\forgot-password.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\RegisterCode.js" />
     <Content Include="Scripts\RegisterUser.js" />
@@ -419,6 +423,7 @@
     <Content Include="Views\Shared\_RegisterCodePartial.cshtml" />
     <Content Include="Views\Shared\_RegisterUserPartial.cshtml" />
     <Content Include="Views\Shared\_LoginPanelPartial.cshtml" />
+    <Content Include="Views\Shared\_ForgotPasswordPanelPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
